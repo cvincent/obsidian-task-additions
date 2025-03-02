@@ -18,6 +18,7 @@ typescript_declarations = true
 
 [dependencies]
 gleam_stdlib = "~> 0.34 or ~> 1.0"
+plinth = ">= 0.5.1 and < 1.0.0"
 
 [dev-dependencies]
 gleeunit = "~> 1.0"

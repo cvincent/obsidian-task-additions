@@ -1,11 +1,17 @@
 import gleam/io
+import plinth/browser/element
+
+pub type Plugin
 
 @external(javascript, "../../../../glue.ts", "glue_func")
 fn glue_func(string_from_gleam: string) -> Nil
 
-pub fn main(string_from_plugin_onload) {
-  io.println("Hello from Gleam!")
-  io.println(string_from_plugin_onload)
+@external(javascript, "../../../../glue.ts", "register_markdown_post_processor")
+fn register_markdown_post_processor(plugin: Plugin, processor: fn(element.Element) -> Nil) -> Nil
+
+pub fn main(plugin: Plugin) {
   glue_func("String passed from Gleam")
-  io.println("Goodbye!")
+  register_markdown_post_processor(plugin, fn (el: element.Element) {
+    io.println(element.inner_text(el))
+  })
 }
