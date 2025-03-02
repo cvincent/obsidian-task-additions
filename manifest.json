@@ -1,0 +1,10 @@
+{
+  "id": "minimal-obsidian-gleam-plugin",
+  "name": "Minimal Obsidian Gleam Plugin",
+  "version": "0.0.1",
+  "minAppVersion": "0.15.0",
+  "description": "Demonstrates some of the capabilities of the Obsidian API.",
+  "author": "Chris Vincent",
+  "authorUrl": "https://github.com/cvincent",
+  "isDesktopOnly": false
+}
