@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-23.11";
+    gleam.url = "nixpkgs/f0295845e58ada369322524631821b01c0db13a7";
   };
 
   outputs =
@@ -17,7 +18,7 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
-          gleam
+          inputs.gleam.legacyPackages.${system}.gleam
           erlang
           nodejs
           typescript
