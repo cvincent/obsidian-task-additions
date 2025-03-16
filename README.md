@@ -17,6 +17,13 @@ Some additions to Obsidian's default handling of task checkboxes:
   timestamp]`.
 - Works in iOS, but there is no right-click menu for the additional states, as I
   do not use them.
+- `setCheckboxAtPathLine` is exposed for scriptability. I use a [hacky
+  fork](https://github.com/cvincent/obsidian-local-rest-api) of the [Obsidian
+  Local REST API](https://github.com/coddingtonbear/obsidian-local-rest-api)
+  plugin to expose an `eval` endpoint I can call from NeoVim to do all sorts of
+  things. For example, I have keymappings for manipulating task lists via this
+  plugin, giving me a consistent editing experience whether I'm in Obsidian or
+  NeoVim.
 
 ## Caveats
 
