@@ -30,9 +30,10 @@ Some additions to Obsidian's default handling of task checkboxes:
 I developed this plugin for my own use, having first scoured the Obsidian
 community plugins for some combination that did everything I wanted. Thus, the
 plugin's features are very much designed for my (apparently) peculiar needs. No
-additional configuration is provided, and is unlikely to be added. That said,
-PRs are welcome if they would be useful to my own setup, otherwise forks are
-also welcome.
+additional configuration is provided, and none is likely to be added. I aim for
+this to be "completed software" in terms of addressing my own specific needs in
+developing it. That said, PRs are welcome if they would be useful to my own
+setup, otherwise forks are also welcome.
 
 Not satisfied with learning one new thing at a time, that being the Obsidian
 plugin API, I also took this as a, opportunity to learn Gleam. So the plugin
