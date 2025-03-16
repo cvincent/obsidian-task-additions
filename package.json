@@ -4,7 +4,7 @@
   "description": "This is a sample plugin for Obsidian (https://obsidian.md)",
   "main": "main.js",
   "scripts": {
-    "build": "gleam build && tsc -noEmit -skipLibCheck && node esbuild.config.mjs production"
+    "build": "gleam build && tsc -noEmit -skipLibCheck -outDir . && node esbuild.config.mjs production"
   },
   "keywords": [],
   "author": "",
