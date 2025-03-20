@@ -198,7 +198,6 @@ pub fn set_checkbox_at_path_line(
       |> list.append(after_section)
       |> string.join("\n")
 
-    console.log(ret)
     ret
   })
 }
