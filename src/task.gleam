@@ -128,6 +128,8 @@ pub fn mark(tasks: List(Task), line: Int, mark: String) -> List(Task) {
 
 fn maybe_mark(task: Task, line: Int, mark: String) -> Result(Task, Task) {
   case task {
+    task if task.mark == None -> Error(task)
+
     task if task.line == line ->
       Ok(
         Task(
